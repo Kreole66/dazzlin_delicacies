@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Edit Recipe</title>
+</head>
+<body>
+
+    <h1>Edit Recipe</h1>
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ recipe_form.as_p }}
+        <button type="submit">Save Changes</button>
+        <button type="submit" name="delete">Delete Recipe</button>
+    </form>
+
+
+</body>
+</html>
